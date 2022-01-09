@@ -1,0 +1,56 @@
+
+   /* ------- NAv Res CSs Below------- */
+   @media only screen and (max-width:790px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-sign-up {
+        width: 100%;
+        margin-left: 50px;
+    }
+   }
+
+/* -------Sec  1 Res CSS Below------- */
+
+   /* 768px */
+
+@media only screen and (max-width: 768px) {
+    .sec1-btn button {
+        top: 110%;
+        right: 0;
+        left: 0%;
+    }
+    .sec1-btn input {
+        width: 160%;
+    }
+
+}
+
+    /* 620px */
+
+@media only screen and (max-width: 620px) {
+    
+    .sec1 .container {
+        display: block;
+    }
+    .container .sec1-img {
+        width: 50%;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 9%;
+    }
+    .sec1-img img {
+        width: 100%;
+    }
+    .sec1-btn input {
+        width: 77%;
+    }
+    .container .sec1-headings {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 50vh;
+    }
+
+}
