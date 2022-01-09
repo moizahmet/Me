@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+/* font-family: 'Licorice', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* font-family: 'Source Serif Pro', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/* font-family: 'Ubuntu Condensed', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* color: #212529; */
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+body {
+    scroll-behavior: smooth;
+}
+h2 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+/* ----------------------NAVBAR,S CSS Below */
+
+label #nav-on,label #nav-off {
+    position: absolute;
+    cursor: pointer;
+    padding: 9px;
+    font-size: 25px;
+    color: #fff;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+}
+label #nav-on {
+    left: 0;
+    border: none;
+    top: 0;
+    border-radius: 0px 0px 10px 0px;
+}
+label #nav-off {
+    left: -230px;
+    border: none;
+
+
+    top: 0;
+    z-index: 1111;  
+}
+#nav-check:checked ~ nav {
+    left: 0;
+}
+#nav-check:checked ~ label #nav-off {
+    left: 210px;
+}
+#nav-check:checked ~ label #nav-on {
+    left: 230px;
+    opacity: 0;
+}
+
+
+
+nav {
+    z-index: 2;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 8px solid black;
+    transition: all 0.4s ease-in-out;
+}
+.nav-header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    padding-top: 30px;
+    line-height: 80px;
+    color: rgb(20, 20, 20);
+}
+.nav-links li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 50px;
+    transition: 0.4s;
+}
+.nav-links li a:hover {
+    font-size: 25px;
+    background-color: rgba(255, 166, 0, 0.89);
+    box-shadow: 0px 0px 20px rgb(255, 166, 0);
+    border-radius: 10px;
+    line-height: 60px;
+}
+
+/* --------------------------------Headers,s CSS Below */
+
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-img, .header-img img {
+    width: 400px;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    outline: 6px solid rgb(2, 2, 2);
+    outline-offset: 10px;
+    animation: header-img 2s ease-in-out infinite 2s alternate-reverse;
+}
+@keyframes header-img {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -20px;
+
+    }
+}
+.header-img .header-img-back {
+    width: 460px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    height: 360px;
+    z-index: -2;
+    box-shadow: 0px 0px 40px rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0);
+    position: absolute;
+    animation: header-back-img 3s ease-in-out infinite alternate;
+}
+@keyframes header-back-img {
+    from {
+        transform: translate(0%,-50%);
+    }
+    to {
+        transform: translate(0%,-45%);
+    }
+}
+.header-info {
+    width: 500px;
+    margin-left: 50px;
+}
+.header-info h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.header-info hr {
+    width: 196px;
+    height: 6px;
+    border: none;
+    opacity: 1;
+    background-color: #212529;
+}
+.header-info p {
+    font-size: 30px;    
+}
+
+.header-sign img {
+    width: 400px;
+}
+.next-sec-btn {
+    color: #fff;
+    background-color: #fff;
+    padding: 12px;
+    font-size: 25px;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    top: 97%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    animation: next-sec-btn 3s infinite ease-in-out alternate;
+}
+@keyframes next-sec-btn {
+    0% {
+        top: 97%;
+        background-color: #fff;
+        border-radius: 20px 0px 0px 20px;
+    }
+    100% {
+        top: 100%;
+        background-color: #000;
+        border-radius: 8px 0px 0px 8px;
+    }
+
+}
+
+
+/* --------------------------------SECTION 1,s CSS Below */
+
+.sec1 {
+    margin-top: 150px;
+}
+.sec1-bio h2 {
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec1-bio h2 hr {
+    width: 90px;
+    height: 9px;
+    background-color: #212529;
+    opacity: 1;
+    border-radius: 0px 0px 10px 10px;
+    animation: sec1-hr 3s ease-in-out infinite 3s alternate;
+}
+@keyframes sec1-hr{
+    0% {
+        width: 160px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    50% {
+        width: 100px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    75% {
+        width: 130px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    100% {
+        width: 160px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+}
+.sec1-details div {
+    border: 2px solid #212529;
+    margin: 10px 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    animation: sec1-details 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes sec1-details {
+    0% {
+        border-radius: 10px 10px 10px 10px;
+    }
+    50% {
+        border-radius: 10px 0px 10px 0px;
+    }
+    75% {
+        border-radius: 0px 10px 0px 10px;
+    }
+    100% {
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+.sec1-btn {
+    margin: 100px 0px;
+    width: 200px;
+    height: 200px;
+    border: 10px double rgb(255, 255, 255);
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+}
+.sec1-btn:hover {
+    border-radius: 40%;
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: 10px double rgb(255, 166, 0);
+    color: #212529;
+    box-shadow: 0px 0px 10px 5px rgb(255, 166, 0);
+}
+.sec1-btn-line hr {
+    width: 100px;
+    height: 20px;
+    background-color: #212529;
+    opacity: .5;
+    border-radius: 10px;
+}
+.sec1-btn:hover ~ .sec1-btn-line hr  {
+    background-color: rgb(255, 166, 0);
+    opacity: 1;
+    margin-left: -100px;
+    box-shadow: 4px 4px 20px rgb(255, 166, 0);
+    transform: rotate(90deg);
+}
+
+.skills-heading {
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.skills div .progress {
+    height: 45px;
+    border: 5px solid black;
+}
+.skills div .progress .progress-bar {
+    background-color: rgb(255, 166, 0);
+    height: 25px;
+    margin: auto 0;
+    border-radius: 0 10px 10px 0;
+    font-size: 20px;
+}
+.skill-ending-text {
+    font-size: 25px;
+}
+.sec1-next-btn {
+    font-size: 20px;
+}
+
+/* ------------------Portfolio Started */
+
+.portfolio {
+    margin-top: 100px;
+}
+.portfolio-header h2 {
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-header h2 hr {
+    width: 100px;
+    height: 7px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.item2 a {
+    width: 500px;
+    height: 400px;
+}
+.item2 a img {
+    width: 500px;
+    height: 400px;
+}
+.item1 a {
+    width: 500px;
+    height: 400px;
+}
+.item1 a img {
+    width: 500px;
+    height: 400px;
+}
+
+/* ------------------Sec 2 Started */
+
+.sec2-heading h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.sec2-heading p {
+    font-size: 20px;
+}
+.sec2-heading hr {
+    width: 100px;
+    margin: 0 auto;
+    height: 5px;
+    border-radius: 10px 0 10px 0          ;
+    background-color: #212529;
+    opacity: 1;
+}
