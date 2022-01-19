@@ -33,7 +33,7 @@ body {
 
 label #nav-on-btn {
     position: fixed;
-    height: 100vh;
+    height: 60px;
     color: white;
     left: 0px;
     background-color: #333;
