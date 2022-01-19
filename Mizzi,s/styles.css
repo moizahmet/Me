@@ -1,370 +1,364 @@
-@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
-/* font-family: 'Licorice', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-/* font-family: 'Source Serif Pro', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* font-family: 'Press Start 2P', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-/* font-family: 'Ubuntu Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* font-family: 'Acme', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: 'Anton', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+/* font-family: 'Fjalla One', sans-serif; */
 
-
-* {
-    padding: 0;
+*{
     margin: 0;
-    list-style-type: none;
-    /* color: #212529; */
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none !important;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    transition: all 0.4s ease-in-out;
+    transition: .5s;
 }
+
 body {
-    scroll-behavior: smooth;
-}
-h2 {
-    font-family: 'Source Serif Pro', serif;
+    background-color: orangered;
 }
 
+/* 
+===============
+--Nav Toggler--
+=============== 
+*/
 
-/* ----------------------NAVBAR,S CSS Below */
-
-label #nav-on,label #nav-off {
-    position: absolute;
-    cursor: pointer;
-    padding: 9px;
-    font-size: 25px;
-    color: #fff;
-    background-color: black;
-    transition: all 0.4s ease-in-out;
-}
-label #nav-on {
-    left: 0;
-    border: none;
-    top: 0;
-    border-radius: 0px 0px 10px 0px;
-}
-label #nav-off {
-    left: -230px;
-    border: none;
-
-
-    top: 0;
-    z-index: 1111;  
-}
 #nav-check:checked ~ nav {
-    left: 0;
+    left: 0px;
+    opacity: 1;
 }
-#nav-check:checked ~ label #nav-off {
-    left: 210px;
+
+label #nav-on-btn {
+    position: fixed;
+    height: 100vh;
+    color: white;
+    left: 0px;
+    background-color: #333;
+    padding: 15px;
+    transition: all 0.4s;
+    opacity: 1;
+    color: orange;
+    box-shadow: 0px 0px 10px #fff;
+    text-shadow: 0pc 0pc 30px #fff;
+    cursor: pointer;
+    font-size: 25px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 0px 10px 10px 0px;
+    border-top: 3px solid white ;
 }
-#nav-check:checked ~ label #nav-on {
-    left: 230px;
+label #nav-on-btn:hover {
+    text-shadow: none;
+    box-shadow: none;
+}
+#nav-check:checked ~ label #nav-on-btn {
+    left: 220px;
+    opacity: 0;
+    height: 100vh;
+}
+
+label #nav-off-btn {
+    position: fixed;
+    text-shadow: 0px 0px 10px #fff;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    z-index: 11;
+    padding: 15px;
+    left: -55px;
+    cursor: pointer;
+    font-size: 25px;
+}
+label #nav-off-btn:hover {
+    text-shadow: none;
+    box-shadow: none;
+}
+#nav-check:checked ~ label #nav-off-btn {
+    left: 198px;
+}
+
+
+/* 
+===============
+--Nav Started--
+=============== 
+*/
+
+nav {
+    z-index: 10;
+    height: 100vh;
+    width: 250px;
+    background-color: #333;
+    box-shadow: 0px 0px 30px #999;
+    border-right: 10px dashed orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: -250px;
     opacity: 0;
 }
 
-
-
-nav {
-    z-index: 2;
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #fff;
-    border-right: 8px solid black;
-    transition: all 0.4s ease-in-out;
+.nav-logo {
+    width: 100%;
 }
-.nav-header h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
-    padding-top: 30px;
-    line-height: 80px;
-    color: rgb(20, 20, 20);
+.nav-logo img {
+    width: 160px;
+    border-bottom: 5px dashed #fff ;
 }
-.nav-links li a {
-    display: block;
-    color: black;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 50px;
-    transition: 0.4s;
-}
-.nav-links li a:hover {
-    font-size: 25px;
-    background-color: rgba(255, 166, 0, 0.89);
-    box-shadow: 0px 0px 20px rgb(255, 166, 0);
-    border-radius: 10px;
-    line-height: 60px;
+.nav-logo img:hover {
+    width: 170px;
 }
 
-/* --------------------------------Headers,s CSS Below */
-
-.header {
-    height: 100vh;
+.nav-links {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
     align-items: center;
 }
-.header-img, .header-img img {
-    width: 400px;
-}
-
-.header-img {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    outline: 6px solid rgb(2, 2, 2);
-    outline-offset: 10px;
-    animation: header-img 2s ease-in-out infinite 2s alternate-reverse;
-}
-@keyframes header-img {
-    from {
-        top: 0px;
-    }
-    to {
-        top: -20px;
-
-    }
-}
-.header-img .header-img-back {
-    width: 460px;
-    top: 50%;
-    transform: translate(0%,-50%);
-    height: 360px;
-    z-index: -2;
-    box-shadow: 0px 0px 40px rgb(255, 166, 0);
-    background-color: rgb(255, 166, 0);
-    position: absolute;
-    animation: header-back-img 3s ease-in-out infinite alternate;
-}
-@keyframes header-back-img {
-    from {
-        transform: translate(0%,-50%);
-    }
-    to {
-        transform: translate(0%,-45%);
-    }
-}
-.header-info {
-    width: 500px;
-    margin-left: 50px;
-}
-.header-info h2 {
-    font-size: 60px;
-    font-weight: 700;
-}
-.header-info hr {
-    width: 196px;
-    height: 6px;
-    border: none;
-    opacity: 1;
-    background-color: #212529;
-}
-.header-info p {
-    font-size: 30px;    
-}
-
-.header-sign img {
-    width: 400px;
-}
-.next-sec-btn {
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+    margin: 10px 0;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 23px;
     color: #fff;
-    background-color: #fff;
-    padding: 12px;
-    font-size: 25px;
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    top: 97%;
-    left: 100%;
-    transform: translate(-100%,-100%);
-    animation: next-sec-btn 3s infinite ease-in-out alternate;
 }
-@keyframes next-sec-btn {
-    0% {
-        top: 97%;
-        background-color: #fff;
-        border-radius: 20px 0px 0px 20px;
-    }
-    100% {
-        top: 100%;
-        background-color: #000;
-        border-radius: 8px 0px 0px 8px;
-    }
-
+.nav-links a:hover {
+    background-color: orangered;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #fff;
 }
 
+.nav-footer p {
+    font-family: 'Anton', sans-serif;
+    color: rgba(255, 255, 255, 0.295);
+    font-size: 11px;
+}
 
-/* --------------------------------SECTION 1,s CSS Below */
+/* 
+================
+--SEC1 Started--
+================
+*/
 
 .sec1 {
-    margin-top: 150px;
-}
-.sec1-bio h2 {
-    font-size: 50px;
-    font-weight: 600;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-.sec1-bio h2 hr {
-    width: 90px;
-    height: 9px;
-    background-color: #212529;
-    opacity: 1;
-    border-radius: 0px 0px 10px 10px;
-    animation: sec1-hr 3s ease-in-out infinite 3s alternate;
-}
-@keyframes sec1-hr{
-    0% {
-        width: 160px;
-        border-radius: 0px 0px 10px 10px;
-    }
-    50% {
-        width: 100px;
-        border-radius: 0px 0px 10px 10px;
-    }
-    75% {
-        width: 130px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    100% {
-        width: 160px;
-        border-radius: 0px 0px 10px 10px;
-    }
 
+.sec1-logo {
+    text-align: center;
 }
-.sec1-details div {
-    border: 2px solid #212529;
-    margin: 10px 10px;
-    font-size: 18px;
-    padding: 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    animation: sec1-details 5s ease-in-out infinite alternate-reverse;
+.sec1-logo img {
+    object-fit: cover;
+    width: 410px;
+    height: 500px;
+    border-right: 7px solid #fff;
+    border-left: 7px solid #fff;
+    border-top: 7px solid #fff;
+    box-shadow: 0px 0px 50px rgb(255, 208, 0);
 }
-@keyframes sec1-details {
-    0% {
-        border-radius: 10px 10px 10px 10px;
-    }
-    50% {
-        border-radius: 10px 0px 10px 0px;
-    }
-    75% {
-        border-radius: 0px 10px 0px 10px;
-    }
-    100% {
-        border-radius: 5px 5px 5px 5px;
-    }
-}
-.sec1-btn {
-    margin: 100px 0px;
-    width: 200px;
-    height: 200px;
-    border: 10px double rgb(255, 255, 255);
-    background-color: rgb(255, 166, 0);
+
+.container .sec1-info {
     display: flex;
-    color: #fff;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
     align-items: center;
-    border-radius: 5px 5px 5px 5px;
-}
-.sec1-btn:hover {
-    border-radius: 40%;
-    font-weight: 800;
-    background-color: rgb(255, 255, 255);
-    font-size: 25px;
-    border: 10px double rgb(255, 166, 0);
-    color: #212529;
-    box-shadow: 0px 0px 10px 5px rgb(255, 166, 0);
-}
-.sec1-btn-line hr {
-    width: 100px;
-    height: 20px;
-    background-color: #212529;
-    opacity: .5;
-    border-radius: 10px;
-}
-.sec1-btn:hover ~ .sec1-btn-line hr  {
-    background-color: rgb(255, 166, 0);
-    opacity: 1;
-    margin-left: -100px;
-    box-shadow: 4px 4px 20px rgb(255, 166, 0);
-    transform: rotate(90deg);
 }
 
-.skills-heading {
-    font-size: 50px;
-    letter-spacing: 4px;
-    font-weight: 900;
+.sec1-info h2 {
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 0px 0px 2px #333;
+    letter-spacing: 2px;
+    font-size: 40px;
 }
-.skills div .progress {
-    height: 45px;
-    border: 5px solid black;
-}
-.skills div .progress .progress-bar {
-    background-color: rgb(255, 166, 0);
-    height: 25px;
-    margin: auto 0;
-    border-radius: 0 10px 10px 0;
-    font-size: 20px;
-}
-.skill-ending-text {
+.sec1-info h2 span {
     font-size: 25px;
+    letter-spacing: 5px;
+    text-shadow: none;
 }
-.sec1-next-btn {
+
+.sec1-info p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sec1-info-links a { 
+    box-shadow: 0px 0px 20px #333;
+    transition: all .8s;
+    position: relative;
+}
+.sec1-info-links a:hover {
+    padding: 15px;
     font-size: 20px;
 }
 
-/* ------------------Portfolio Started */
+/* 
+================
+--SEC2 Started--
+================
+*/
 
-.portfolio {
-    margin-top: 100px;
-}
-.portfolio-header h2 {
-    font-size: 50px;
-    font-weight: 700;
+.sec2 .container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.portfolio-header h2 hr {
-    width: 100px;
-    height: 7px;
-    border-radius: 10px;
-    opacity: 1;
-}
-.item2 a {
-    width: 500px;
-    height: 400px;
-}
-.item2 a img {
-    width: 500px;
-    height: 400px;
-}
-.item1 a {
-    width: 500px;
-    height: 400px;
-}
-.item1 a img {
-    width: 500px;
-    height: 400px;
-}
 
-/* ------------------Sec 2 Started */
-
-.sec2-heading h3 {
+.container .sec2-heading {
+    width: 65%;
+    padding-top: 80px;
+}
+.sec2-heading h2 {
+    font-family: 'Bebas Neue', cursive;
     font-size: 50px;
-    font-weight: 900;
+    text-shadow: 0px 0px 3px #333;
 }
 .sec2-heading p {
-    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    font-size: 17px;
 }
-.sec2-heading hr {
-    width: 100px;
-    margin: 0 auto;
-    height: 5px;
-    border-radius: 10px 0 10px 0          ;
-    background-color: #212529;
-    opacity: 1;
+
+.row .skill-1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+
+.skill-1 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-1 .progress-bar {
+    width: 74%;
+    background-color: #333;
+}
+
+.row .skill-2 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+.skill-2 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-2 .progress-bar {
+    width: 70%;
+    background-color: #333;
+}
+
+.row .skill-3 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+.skill-3 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-3 .progress-bar {
+    width: 64%;
+    background-color: #333;
+}
+
+.row .skill-4 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+.skill-4 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-4 .progress-bar {
+    width: 40%;
+    background-color: #333;
+}
+
+/* 
+================
+--SEC3 Started--
+================
+*/
+
+.sec3 {
+    height: 100vh;
+}
+.sec3 .container {
+    text-align: center;
+}
+
+.sec3-headings {
+    padding-top: 100px;
+}
+.sec3-headings h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-shadow: 0px 0px 3px #333;
+}
+.sec3-headings p {
+    font-family: 'Acme', sans-serif;
+    font-size: 17px;
+}
+
+.projects {
+    margin-top: 100px;
+}
+.proj1 a img {
+    width: 100%;
+    border: 3px dashed white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #333;
+}
+.proj1 a img:hover {
+    width: 90%;
+    box-shadow: 0px 0px 30px #fff;
+}
+
+ .proj2 a img {
+    width: 100%;
+    border: 3px dashed white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #333;
+}
+.proj2 a img:hover {
+    width: 90%;
+    box-shadow: 0px 0px 30px #fff;
+}
+
+/* 
+================
+--SEC4 Started--
+================
+*/
+
+.sec4 {
+    height: 100vh;
+}
+
+.container .sec4-heading {
+    padding-top: 100px;
+}
+.sec4-heading h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-shadow: 0px 0px 3px #333;
+}
+.sec4-heading p {
+    font-family: 'Acme', sans-serif;
+    font-size: 17px;
+}
+.form-floating, .sbmit-btn, .form-label {
+    font-family: 'Acme', sans-serif;
 }

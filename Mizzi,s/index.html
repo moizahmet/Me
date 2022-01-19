@@ -4,185 +4,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mizzi,s</title>
-    <link rel="stylesheet" href="./Assets/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="/responsivness.css">
 </head>
 <body>
-
-    <!-- Navbar Start -->
-    <input type="checkbox" id="nav-check" class="d-none">
+    <input type="checkbox" class="d-none" id="nav-check"> <!--------------------NAVBAR Toggler Start -->
     <label for="nav-check">
-        <i class="fa fa-arrow-right position-fixed" id="nav-on" aria-hidden="true"></i>
-        <i class="fa fa-arrow-left position-fixed" id="nav-off" aria-hidden="true"></i>
-    </label>
-    <nav class="d-flex flex-column justify-content-between">
-        <div class="nav-header text-center">
-            <h1>Mizzi,s</h1>
+        <i class="fa fa-bars" aria-hidden="true" id="nav-on-btn"></i>
+        <i class="fa fa-arrow-left" aria-hidden="true" id="nav-off-btn"></i>
+    </label> <!--------------------NAVBAR Toggler End -->
+    <nav> <!--------------------NAVBAR Start -->
+        <div class="nav-logo text-center">
+            <img src="./assets/images/logo.png" alt="logo">
         </div>
-
-        <ul class="nav-links text-center me-4">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact / Social </a></li>
-        </ul>
-
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#biography">Biography</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
         <div class="nav-footer text-center">
-            <p>©2022 Personal Portfolio Created By Moiz Ahmed</p>
+            <p> &copy; 2022 Portfolio by Moiz Ahmed</p>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Header Started -->
-    <section class="header overflow-hidden mt-5 mb-5" id="home">
-        <div class="header-cont row justify-content-center">
-            <div class="header-img col-12 col-md-6">
-                <div class="header-img-back"></div>
-                <img src="./Assets/images/me.jpg" alt=":))">
+    </nav> <!--------------------NAVBAR End -->
+    <section class="sec1" id="home"> <!----------------SECTION 1 (Home) Start -->
+        <div class="container row justify-content-center">
+            <div class="sec1-logo col-12 col-lg-6 d-flex justify-content-center"> 
+                <img src="./assets/images/me.jpg" class="rounded-pill" alt="me:)">
             </div>
-            <div class="header-info col-12 col-md-6 d-flex flex-column justify-content-evenly">
-                <h2>Web Developer<hr></h2>
-                <p>Founder of Frenify. Professional UI/UX designer and web developer based on Gujrat. Sometimes works as a freelancer.</p>
-                <div class="header-sign">
-                    <img src="./Assets/images/sign-handri8.png" alt="signature-img">
+            <div class="sec1-info col-12 col-lg-6 text-center">
+                <h2><span> Caio, Io Sono </span><br> Moiz Ahmed</h2>
+                <p>A Random Guy, With Some Extra Ordinary Skills :)</p>
+                <div class="sec1-info-links">
+                    <a href="https://www.instagram.com/moizahmet/" class="btn btn-dark"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
+                    <a href="https://linktr.ee/moizahmet" class="btn btn-dark mx-3"><i class="fa fa-tree" aria-hidden="true"></i></a>
+                    <a href="mailto:iambusinessmanger@outlook.com" class="btn btn-dark"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#biography" class="next-sec-btn"><i class="fa fa-arrow-down text-white" aria-hidden="true"></i></a>
-    </section>
-    <!-- Header end -->
-
-    <hr style="background-color: black;height: 5px;opacity: 1;width: 90%;margin: 0 auto;">
-
-    <!-- Sec 1 (Biography) Start -->
-    <section class="sec1" id="biography">
-        <div class="container text-center sec1-cont">
-            <div class="sec1-bio">
-                <h2> Biography <hr> </h2>
-                <p class="fs-4 text-black my-4">I Am A Frontend-Developer, Livin In Gujrat, Pakistan. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</p>
-            </div>
-            <div class="sec1-details row justify-content-center">
-                <div class="col-10 col-sm-6 col-md-4">Name: <span class="fw-bolder">Moiz Ahmed</span></div>
-                <div class="col-10 col-sm-6 col-md-4">Email: <span class="fw-bolder">iambusinessmanger@gmail.com</span></div>
-                <div class="col-10 col-sm-6 col-md-4">Address: <span class="fw-bolder">Gujrat, Pakistan</span></div>
-                <div class="col-10 col-sm-6 col-md-4">Telegram: <span class="fw-bolder">Yes</span></div>
-            </div>
-            <div class="sec1-btn-div d-flex justify-content-evenly align-items-center">
-                <a href="" class="sec1-btn"><i class="fa fa-cloud-download d-block" aria-hidden="true"></i>Download CV</a>
-                <div class="sec1-btn-line">
-                    <hr>
-                    <hr style="margin-left: -60px;">
-                    <hr style="margin-left: -60px;">
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-sm my-5 skills" id="skills">
-            <div class="text-center"> <h3 class="skills-heading">Skills</h3> </div>
-
-            <div class="skill-1">
-                <h3 class="mb-4">HTML</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 87%;">87%</div>
-                </div>
-            </div>
-
-            <div class="skill-2 my-5">
-                <h3 class="mb-4">CSS</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 73%;">73%</div>
-                </div>
-            </div>
-
-            <div class="skill-3">
-                <h3 class="mb-4">Bootstrap</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 58%;">58%</div>
-                </div>
-            </div>
-
-            <p class="skill-ending-text text-center my-5">A freelance creative designer with a love for minimal design, clean typography and well-written code, located in San Francisco. Provide high quality and cost effective offshore web and software development services. Wide range of web and software development services across the world.</p>
-
-        </div>
-        <div class="text-end">
-            <a href="#contact" class="sec1-next-btn"><i class="fa fa-arrow-down text-white bg-black p-3" aria-hidden="true"></i></a>
-        </div>
-    </section>
-    <!-- Sec 1 End  -->
-
-    <hr style="background-color: black;height: 5px;opacity: 1;width: 90%;margin: 10px auto;">
-
-    <!-- Portfolio Sec Started -->
-
-    <!-- <section class="portfolio container-sm">
-        <div class="container-sm text-center">
-            <div class="portfolio-header">
-                <h2>Portfolio <hr></h2>
-                <button class="btn btn-outline-warning"><a href="#contact" class="text-dark">If You Are Interested, Get In Touch With Me</a></button>
-            </div> 
-
-            <div class="portfolio-item-cont row justify-content-evenly">
-        
-            <div class="item-1 col-10 col-sm-5">
-                <a href="./Projects/Elessi/"><img src="./Assets/images/elessi-logo.png" alt=""></a>
-            </div>
-            
-            <div class="item2 col-10 col-sm-5">
-                <a href="./Projects/Lezir/"><img src="./Assets/images/lezir-logo.png" alt=""></a>
-            </div>
-            </div>
-        </div>
-    </section> -->
-    
-    <!-- Portfolio Sec Closed -->
-
-    <hr style="background-color: black;height: 5px;opacity: 1;width: 90%;margin: 10px auto;">
-
-
-    <!-- Sec 2 { Contact } Started -->
-    <section class="sec2 mt-5 mb-5" id="contact">
-        <div class="container p-5">
+    </section> <!----------------SECTION1 Closed -->
+    <section class="sec2" id="biography"> <!----------------SECTION 2 (About) Started -->
+        <div class="container">
             <div class="sec2-heading text-center">
-                <h3>Contact <hr> </h3>
-                <p>Don't Be shy, Lemme Know What You Think</p>
-
-                <div>
-                    <a href="https://www.instagram.com/moizahmet/" class="btn btn-outline-warning p-3"><i class="fa fa-camera-retro" aria-hidden="true"></i> Instagram</a>
-                    <a href="mailto:iambusinessmanger@outlook.com" class="btn btn-outline-warning p-3"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-                    <a href="https://linktr.ee/moizahmet" class="btn btn-outline-warning p-3"><i class="fa fa-tree" aria-hidden="true"></i> Linkree</a>
+                <h2>About Me</h2>
+                <p>I Am A Frontend-Developer, Livin In Gujrat, Pakistan. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</p>
+            </div>
+            <div class="skills w-100 mt-5">
+                <div class="row justify-content-center">
+                    <!-- skill 1 Below -->
+                    <div class="skill-1 col-12 col-sm-6">
+                        <h2>HTML</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-animated progress-bar-striped">74%</div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 Below -->
+                    <div class="skill-2 col-12 col-sm-6">
+                        <h2>CSS</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-animated progress-bar-striped">70%</div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 Below -->
+                    <div class="skill-3 col-12 col-sm-6">
+                        <h2>Bootstrap</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-animated progress-bar-striped">64%</div>
+                        </div>
+                    </div>
+                    <!-- Skill 4 Below -->
+                    <div class="skill-4 col-12 col-sm-6">
+                        <h2>Photoshop</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-animated progress-bar-striped">40%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-            <form class="sec2-form row">
-                <div class="form-floating col-12 col-sm-6 mt-4 mt-sm-5">
-                    <input type="text" class="form-control" id="name" placeholder="Whats Ur Name Tho??">
-                    <label for="name" class="ps-4">Name :</label>
-                </div>
-    
-                <div class="form-floating col-12 col-sm-6 mt-5 mb-5">
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                    <label for="email" class="ps-4">Email :</label>
-
-                </div>
-    
-                <div class="col-12">
-                    <label for="message">Message</label> <br>
-                    <textarea name="Write A Message" id="message" rows="6" style="width: 100%;"></textarea>
-                    <button class="btn btn-outline-warning mt-3 fs-5" style="width: 100%;">Submit</button>
-                </div>
         </div>
-        </form>
-
-        <div class="text-center">
-            <p>(---Peace ✌️---)</p>
+    </section> <!----------------SECTION 2 Closed -->
+    <section class="sec3" id="projects"><!----------------SECTION 3 (Portfolio) Started -->
+        <div class="container">
+            <div class="sec3-headings text-center">
+                <h2>Projects</h2>
+                <p>Some Of My Beginning Projects</p>
+            </div>
+            <div class="projects row">
+                <div class="proj1 col-12 col-lg-6">
+                    <a href="./projects/Elessi/"><img src="./assets/images/elessi-logo.png" alt="img"></a>
+                </div>
+                <div class="proj2 col-12 col-lg-6 my-5 my-lg-0">
+                    <a href="./projects/Lezir/"><img src="./assets/images/lezir-logo.png" alt="img"></a>
+                </div>
+            </div>
         </div>
-    </section>
-        <!-- Sec 2 Closed -->
+    </section> <!----------------SECTION 3 Closed -->
+    <section class="sec4" id="contact"> <!----------------SECTION 4 (Contact) Start -->
+        <div class="container">
+            <div class="sec4-heading text-center">
+                <h2>Conatct</h2>
+                <p>Lemme Know What You Think :)</p>
+            </div>
+            <div class="sec4-form-div">
+                <form class="row justify-content-center align-content-center">
+                  <div class="col-12 col-md-6 mb-3 mb-lg-0 form-floating name-inpt">
+                    <input type="text" class="form-control" id="form-name" placeholder="Name" required>
+                    <label for="form-name" class="form-label ps-4">Name</label>
+                  </div>
+                  <div class="col-12 col-md-6 form-floating name-inpt">
+                      <input type="email" class="form-control" id="form-mail" placeholder="Email" required>
+                      <label for="form-mail" class="form-label ps-4">Email</label>
+                  </div>
+                  <div class="col-md-10 mt-3 ">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" cols="100%"></textarea>
 
+                  </div>
+                  <div class="col-5 text-center mt-5">
+                    <button class="btn btn-dark sbmit-btn" type="submit">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </section> <!----------------SECTION 4 Closed -->
 
-    <script src="./Assets/boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/boostrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
