@@ -8,6 +8,8 @@
 /* font-family: 'Bebas Neue', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* font-family: 'Fjalla One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+/* font-family: 'Square Peg', cursive; */
 
 *{
     margin: 0;
@@ -17,7 +19,7 @@
 }
 
 body {
-    background-color: rgb(255, 238, 0);
+    background-color: rgb(126, 126, 126);
 }
 
 /* 
@@ -36,7 +38,7 @@ label #nav-on-btn {
     height: 60px;
     color: white;
     left: 0px;
-    background-color: #333;
+    background-color: #fff;
     padding: 15px;
     transition: all 0.4s;
     opacity: 1;
@@ -92,7 +94,7 @@ nav {
     width: 250px;
     background-color: #333;
     box-shadow: 0px 0px 30px #999;
-    border-right: 10px dashed orangered;
+    border-right: 10px dashed rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,9 +140,9 @@ nav {
 }
 
 .nav-footer p {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Square Peg', cursive;
     color: rgba(255, 255, 255, 0.295);
-    font-size: 11px;
+    font-size: 20px;
 }
 
 /* 
@@ -166,7 +168,7 @@ nav {
     border-right: 7px solid #fff;
     border-left: 7px solid #fff;
     border-top: 7px solid #fff;
-    box-shadow: 0px 0px 50px rgb(255, 208, 0);
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
 }
 
 .container .sec1-info {
@@ -240,7 +242,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-1 .progress-bar {
-    width: 74%;
+    width: 89%;
     background-color: #333;
 }
 
@@ -268,7 +270,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-3 .progress-bar {
-    width: 64%;
+    width: 90%;
     background-color: #333;
 }
 
@@ -282,7 +284,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-4 .progress-bar {
-    width: 40%;
+    width: 51%;
     background-color: #333;
 }
 
@@ -344,7 +346,7 @@ nav {
 */
 
 .sec4 {
-    height: 100vh;
+    height: 300px;
 }
 
 .container .sec4-heading {
@@ -361,4 +363,8 @@ nav {
 }
 .form-floating, .sbmit-btn, .form-label {
     font-family: 'Acme', sans-serif;
+}
+
+.sec4-links a {
+    width:  100px;
 }
