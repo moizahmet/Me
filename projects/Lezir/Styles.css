@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ---CSS BELOW--- */
+
+/* ---- CSS Applied To All---- */
+* {
+    color: #3b3950 ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.container {
+    width: 86%;
+    margin: 0 auto;
+}
+h2, h1 ,h3 ,h4 ,p {
+    font-family: 'Mulish', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+                    /* ---- Body,s Css---- */
+body {
+    width: 100%;
+}
+
+                    /* ----Nav Css---- */
+nav {
+    background-color: #fff;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav-items {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #fff
+}
+
+/* ----logo Css---- */
+.logo {
+    width: 10%;
+}
+.logo a {
+    text-align: center;
+}
+.logo a img {
+    width: 100px;
+    height: 25px;
+}
+
+/* ----Nav Menu Css---- */
+.nav-menu {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.nav-menu-ul {
+    margin: 0 auto;
+}
+.nav-menu-ul ul {
+    width: fit-content;
+}
+.nav-menu-ul ul li {
+    display: inline;
+}
+.nav-menu-ul ul li a {
+    text-decoration: none;
+    color: rgb(115	,113	,130);
+    margin: 0px 20px;
+    padding: 10px 0px;
+    font-weight: 550;
+    transition-duration: 0.5s;
+}
+.nav-menu-ul ul li a:hover {
+    color: rgb(88	,80	,215);
+}
+
+
+/* ----Nav sign Up Area,s Css---- */
+.nav-sign-up {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.nav-sign-up ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.nav-sign-up ul a {
+    display: inline;
+    color: rgb(115	,113	,130);
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.nav-sign-up ul a:hover {
+    color: rgb(88	,80	,215);
+}
+
+
+
+                    /* ---------CSS of Section 1 Started---------- */
+
+.sec1 {
+    padding-top: 10%;
+    width: 100%;
+    background-color: #fff;
+}
+/* ---Sec 1 Container,s CSS--- */
+.sec1 .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+/* Sec 1 Container,s Headings And Button CSS */
+.container .sec1-headings {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1-headings .sec1-headings-cont {
+    width: fit-content;
+    height: fit-content;
+}
+.sec1-h2 h2 {
+    text-shadow: 1px 1px 3px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.sec1-h2 p {
+    color: #9e9cb9;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.sec1-btn {
+    position: relative;
+}
+.sec1-btn input {
+    background-color: #fff;
+    border: none;
+    background-color: #f0f2fa;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 50px;
+}
+.sec1-btn button {
+    background-color: #4e42d9;
+    border: 2px #453da1be;
+    height: 44px;
+    width: 130px;
+    border-radius: 5px;
+    position: absolute;
+    top: 58px;
+    right: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Sec 1 img,s CSS  */
+.container .sec1-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1-img img {
+    width: 95%;
+}
+
+                      /* ----------Sec 2 CSS Below------------ */ 
+.sec2 {
+    background-color: #fff;
+    margin-top: 40px;
+}
+.sec2 .container {
+    display: flex;
+}
+/* ---Sec 2 Div 1--- */
+.sec2-div1 {
+display: flex;
+width: 33%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+}
+.sec2-div1-div {
+    text-align: left;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 2px ;
+}
+.sec2-div1-div i {
+    color: #4e42d9  ;
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+}
+.sec2-div1-div button {
+    color: #4e42d9;
+    background-color: #fff;
+    border: 1px solid #4e42d9;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+}
+.sec2-div1-div button a {
+    color: #4e42d9;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* ---Sec 2 Div 2--- */
+
+
+.sec2-div2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.sec2-div2-div1 {
+    text-align: left;
+    padding: 50px 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px ;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+.sec2-div2-div1  i {
+    color: #4e42d9  ;
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+
+/* sec 2 Div 3 CSS below */
+
+.sec2-div3 {
+    display: flex;
+    margin-top: -60px;
+    flex-wrap: wrap;
+    width: 33%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.sec2-div3-div {
+        text-align: left;
+        width: 100%;
+        margin: 30px 10px;
+        padding: 50px 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 2px ;
+        transition: 0.4s;
+}
+.sec2-div3-div  i {
+        color: #4e42d9  ;
+        background-color: #ffffff;
+        width: 70px;
+        height: 70px;
+        font-size: 50px;
+        transition: all 0.4s;
+        border-radius: 50%;
+}
+
+/* ----Sec 2 Hover CSS Below---- */
+
+ /* (Sec 2 DIV 2 Below) */
+
+ .sec2-div2 .sec2-div2-div1:hover {
+    background-color: #4e42d9;
+    color: rgb(88 ,80 ,215);
+    margin-top: -10px;
+}
+.sec2-div2-div1:hover i {
+    background-color: #4e42d9;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+/* (Sec2 Div 3 Hover CSS Below) */
+
+.sec2-div3-div:hover {
+    background-color: #4e42d9;
+    color: #fff;
+    margin-top: -10px;
+}
+.sec2-div3-div:hover i {
+    background-color: #4e42d9;
+    color: #fff;
+    
+}
+
+
+
+                      /* ----------CSS Of Sec 3 Below--------- */
+
+.sec3 {
+    margin-top: 150px;
+    background-color: #fff;
+}
+/* Sec 3,s heading below */
+.sec3-heading {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec3-heading p {
+    padding: 10px 0;
+    color: #9e9cb9;
+}
+/* Image And Info Area,s Container  */
+.sec3-content-div {
+    display: flex;
+    justify-content: space-between;
+}
+/* Sec 3,s Info Areas CSS Below */
+.sec3-info-area {
+    width: 50%;
+    margin-top: 90px;
+}
+.sec3-info-area-cont {
+    height: 100%;
+    width: 96%;
+}
+.sec3-info-area-cont span {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.sec3-info-area h2 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.sec3-info-area p {
+    color: #9e9cb9;
+    margin: 20px 0;
+}
+.sec3-info-area-spans {
+    color: #9e9cb9;
+}
+.sec3-fa-circle {
+    color: #9e9cb9;
+}
+/* Sec 3 Buttons CSS Below */
+.info-sec3-buttons {
+    width: 100%;
+    margin-top: 100px;
+}
+.sec3-read-btn {
+    cursor: pointer;
+    background-color: #4e42d9;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+}
+.sec3-buy-btn {
+    cursor: pointer;
+    background-color: #4f42d921;
+    color: #4e42d9;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+}
+/* Sec 3,s Buttons Hover CSS BElow */
+
+                      /* ----------CSS Of Sec 4 Below--------- */
+
+.sec4 {
+    margin-top: 150px;
+    background-color: #fff;
+}
+/* Image And Info Area,s Container  */
+.sec4-content-div {
+    display: flex;
+    justify-content: space-between;
+}
+/* Sec 3,s Info Areas CSS Below */
+.sec4-info-area {
+    width: 50%;
+    margin-top: 90px;
+}
+.sec4-info-area-cont {
+    height: 100%;
+    width: 96%;
+}
+.sec4-info-area-cont span {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.sec4-info-area h2 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.sec4-info-area p {
+    color: #9e9cb9;
+    margin: 20px 0;
+}
+.sec4-info-area-spans {
+    color: #9e9cb9;
+}
+.sec4-fa-circle {
+    color: #9e9cb9;
+}
+/* Sec 4 Buttons CSS Below */
+.sec4-read-btn {
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #4e42d9;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+}
+.sec4-buy-btn {
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #4f42d921;
+    color: #4e42d9;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+}
+
+
+
+
+                /*   -- -------- SEC 5 CSS Below ---------- --  */
+
+
+.sec5 {
+    background-color: #fff;
+    margin-top: 120px;
+}
+/* Sec 5 Heading,s Css Below */
+.sec5-heading {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sec5-heading p {
+    color: #9e9cb9;
+}
+/* Sec 5 Headings Css Below  */
+.content-container-sec5 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+
+}
+/* Sec 5 TAbs CSS */
+.basic-tab {
+    margin-top: 100px;
+    width: 33%;
+}
+.simple-tab {
+    margin-top: 100px;
+    width: 33%;
+}
+.pro-tab {
+    width: 33%;
+    margin-top: 100px;
+}
+.tabs-container-sec5 {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Sec 5 BAsic TAb And Its Elemnts CSS */
+.sec5-basic {
+    text-align: center;
+    line-height: 60px;
+}
+.sec5-logo-basic {
+    margin: 0 auto;
+    background-color: #4e42d9;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec5-logo-basic i {
+    font-size: 50px;
+    color: #fff; 
+}
+.sec5-basic h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+.sec5-basic p {
+    color: #9e9cb9;
+}
+.sec5-basic button {
+    height: 50px;
+    width: 130px;
+    background-color: #4e42d9;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec5-basic button a {
+    font-size: 15px;
+}
+/* Sec 5 Simple TAb CSS Below */
+
+
+.sec5-simple {
+    text-align: center;
+    line-height: 60px;
+}
+.sec5-logo-simple {
+    margin: 0 auto;
+    background-color: #4e42d9;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec5-logo-simple i {
+    font-size: 50px;
+    color: #fff; 
+}
+.sec5-simple h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+.sec5-simple p {
+    color: #9e9cb9;
+}
+.sec5-simple button {
+    height: 50px;
+    width: 130px;
+    background-color: #4e42d9;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec5-simple button a {
+    font-size: 15px;
+}
+
+/* Sec 5 PRO TAb CSS Below */
+
+
+.sec5-pro {
+    text-align: center;
+    line-height: 60px;
+}
+.sec5-logo-pro {
+    margin: 0 auto;
+    background-color: #4e42d9;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec5-logo-pro i {
+    font-size: 50px;
+    color: #fff; 
+}
+.sec5-pro h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+.sec5-pro p {
+    color: #9e9cb9;
+}
+.sec5-pro button {
+    height: 50px;
+    width: 130px;
+    background-color: #4e42d9;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec5-pro button a {
+    font-size: 15px;
+}
+
+
+                /* ----------- Sec 6,s CSS Below --------------- */
+
+.sec6 {
+    background-color: #fff;
+    margin-top: 250px
+}
+/* Sec 6,s Heading CSS  */
+.sec6-heading {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sec6-heading p {
+    color: #9e9cb9;
+    margin-top: 30px;
+}
+.sec6-news {
+    display: flex;
+}
+/* News 1 TAb CSS Below */
+.news1 {
+    height: 450px;
+    width: 33%;
+    padding: 0px 10px;
+}
+.news-img {
+    background-image: url(./Assets/images/news-img.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+.news1 span , .news1 span i {
+    color: #9e9cb9;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.news1 h3 {
+    margin-bottom: 15px;
+}
+/* News 2 TAb CSS BElow */
+.news2 {
+    height: 450px;
+    width: 33% ;
+    padding: 0px 10px;
+}
+.news-img {
+    background-image: url(./Assets/images/news-img.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+.news2 span , .news2 span i {
+    color: #9e9cb9;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.news2 h3 {
+    margin-bottom: 15px;
+}
+/* News 3 TAb Below */
+.news3 {
+    height: 450px;
+    width: 33% ;
+    padding: 0px 10px;
+}
+.news-img {
+    background-image: url(./Assets/images/news-img.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+.news3 span , .news3 span i {
+    color: #9e9cb9;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.news3 h3 {
+    margin-bottom: 15px;
+}
+
+
+                /* ---------------- Footer CSS Below ----------------- */
+
+footer {
+    background-color: #23222f;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: #9e9cb9;
+}
