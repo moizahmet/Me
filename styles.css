@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(255, 196, 0);
 }
 
 /* 
@@ -196,12 +196,12 @@ nav {
 
 .sec1-info-links a { 
     box-shadow: 0px 0px 20px #333;
-    transition: all .8s;
+    transition: all .1s;
     position: relative;
 }
 .sec1-info-links a:hover {
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 /* 
@@ -242,7 +242,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-1 .progress-bar {
-    width: 89%;
+    width: 100%;
     background-color: #333;
 }
 
@@ -256,7 +256,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-2 .progress-bar {
-    width: 70%;
+    width: 100%;
     background-color: #333;
 }
 
@@ -270,7 +270,7 @@ nav {
     box-shadow: 0px 0px 10px #000;
 }
 .skill-3 .progress-bar {
-    width: 90%;
+    width: 100%;
     background-color: #333;
 }
 
@@ -288,6 +288,33 @@ nav {
     background-color: #333;
 }
 
+.row .skill-5 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+.skill-5 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-5 .progress-bar {
+    width: 51%;
+    background-color: #333;
+}
+
+.row .skill-6 {
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 2px #333;
+    margin: 30px 0;
+}
+.skill-6 .progress {
+    height: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+.skill-6 .progress-bar {
+    width: 51%;
+    background-color: #333;
+}
 /* 
 ================
 --SEC3 Started--
